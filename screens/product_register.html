@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>BuffKey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/card.css">
+    <link rel="stylesheet" href="../assets/css/components/input.css">
+    <link rel="stylesheet" href="../assets/css/product_register.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a href="index.html"><img src="../assets/img/logo.png" alt="Logotipo BuffKey" class="header__logo" /></a>
+        <nav>
+            <ul class="header__list-nav">
+                <li class="header__link"><a href="product_list.html">Productos</a></li>
+                <li class="header__link"><a href="#">Pedidos</a></li>
+                <li class="header__link"><a href="#">Proveedores</a></li>
+                <li class="header__link"><a href="#">Reporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h1 class="card__title">Nuevo Producto</h1>
+            <form class="flex flex--column" data-form>
+                <div class="input-container">
+                    <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" required
+                        data-nombre />
+                    <label class="input-label" for="nombre">Nombre</label>
+                    <span class="input-menssage-error">Este campo es requerido</span>
+                </div>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="text" placeholder="email" required data-email />
+                    <label class="input-label" for="email">Email</label>
+                    <span class="input-menssage-error">Este campo es requerido</span>
+                </div>
+                <button type="submit" class="button">Registrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.seeker-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.seeker {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 5px solid #ccd1e4;
+    font-weight: 600;
+    border-radius: calc(0.5 * 44px);
+}
+
+.button-add {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    display: flex;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    border-radius: 7px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.plus {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>BuffKey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/seeker.css">
+    <link rel="stylesheet" href="../assets/css/components/card.css">
+    <link rel="stylesheet" href="../assets/css/product_list.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a href="index.html"><img src="../assets/img/logo.png" alt="Logotipo BuffKey" class="header__logo" /></a>
+        <nav>
+            <ul class="header__list-nav">
+                <li class="header__link"><a href="product_list.html">Productos</a></li>
+                <li class="header__link"><a href="#">Pedidos</a></li>
+                <li class="header__link"><a href="#">Proveedores</a></li>
+                <li class="header__link"><a href="#">Reporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-container container">
+        <div class="seeker-container">
+            <input type="text" name="seeker" class="seeker" placeholder="Buscar...">
+            <a href="product_register.html" class="button-add">
+                <p class="plus">✚</p>
+                <p>Registrar Producto</p>
+            </a>
+        </div>
+        <ul class="product-list">
+            <li class="card">
+                <div>
+                    <h2 class="product-name">🍇Pechuga de pollo</h2>
+                    <ul class="product-tag flex">
+                        <li>Categoria1</li>
+                        <li>Categoria2</li>
+                        <li>Categoria3</li>
+                    </ul>
+                </div>
+                <div class="product-value">
+                    <p class="amount">35</p>
+                    <p>Kg</p>
+                </div>
+                <ul class="product-opt">
+                    <li class="product-opt__btn restar">−</li>
+                    <li class="product-opt__btn editar"><a href="#">✎</a></li>
+                    <li class="product-opt__btn eliminar">🗑</li>
+                </ul>
+            </li>
+            <li class="card">
+                <div>
+                    <h2 class="product-name">🍊Camarones</h2>
+                    <ul class="product-tag flex">
+                        <li>Categoria1</li>
+                        <li>Categoria2</li>
+                        <li>Categoria3</li>
+                    </ul>
+                </div>
+                <div class="product-value">
+                    <p class="amount">35</p>
+                    <p>Kg</p>
+                </div>
+                <ul class="product-opt">
+                    <li class="product-opt__btn restar">−</li>
+                    <li class="product-opt__btn editar"><a href="#">✎</a></li>
+                    <li class="product-opt__btn eliminar">🗑</li>
+                </ul>
+            </li>
+            <li class="card">
+                <div>
+                    <h2 class="product-name">🍈Gaseosa</h2>
+                    <ul class="product-tag flex">
+                        <li>Categoria1</li>
+                        <li>Categoria2</li>
+                        <li>Categoria3</li>
+                    </ul>
+                </div>
+                <div class="product-value">
+                    <p class="amount">35</p>
+                    <p>Litros</p>
+                </div>
+                <ul class="product-opt">
+                    <li class="product-opt__btn restar">−</li>
+                    <li class="product-opt__btn editar"><a href="#">✎</a></li>
+                    <li class="product-opt__btn eliminar">🗑</li>
+                </ul>
+            </li>
+            <li class="card">
+                <div>
+                    <h2 class="product-name">🍍Aceite girasol 25L</h2>
+                    <ul class="product-tag flex">
+                        <li>Categoria1</li>
+                        <li>Categoria2</li>
+                        <li>Categoria3</li>
+                    </ul>
+                </div>
+                <div class="product-value">
+                    <p class="amount">35</p>
+                    <p>Unidades</p>
+                </div>
+                <ul class="product-opt">
+                    <li class="product-opt__btn restar">−</li>
+                    <li class="product-opt__btn editar"><a href="#">✎</a></li>
+                    <li class="product-opt__btn eliminar">🗑</li>
+                </ul>
+            </li>
+            <li class="card">
+                <div>
+                    <h2 class="product-name">🍌Mojarra 300g</h2>
+                    <ul class="product-tag flex">
+                        <li>Categoria1</li>
+                        <li>Categoria2</li>
+                        <li>Categoria3</li>
+                    </ul>
+                </div>
+                <div class="product-value">
+                    <p class="amount">35</p>
+                    <p>Unidades</p>
+                </div>
+                <ul class="product-opt">
+                    <li class="product-opt__btn restar">−</li>
+                    <li class="product-opt__btn editar"><a href="#">✎</a></li>
+                    <li class="product-opt__btn eliminar">🗑</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+    <script type="module" src="../controllers/product.controller.js">
+    </script>
+</body>
+
+</html>
