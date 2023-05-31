@@ -1,6 +1,6 @@
 .card {
     flex-direction: column;
-    margin-top: 3rem;
+    margin: 3rem 0;
     padding: 2rem;
 }
 
@@ -9,19 +9,28 @@
     margin-bottom: 1rem;
 }
 
+.form-done {
+    padding: 0 10% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .button {
-    display: block;
-    background-color: var(--primary-color);
     border-radius: 7px;
-    width: 100%;
+    width: 30%;
     margin-top: 1rem;
     max-width: 20rem;
     padding: 1.125rem;
-    box-sizing: border-box;
     color: var(--contrast-ligth-color);
     font-size: var(--font-size-button);
-    align-self: center;
-    text-align: center;
+}
+
+.register {
+    background-color: var(--primary-color);
+}
+
+.cancel {
+    background-color: var(--info-color);
 }
 
 .simple-button {

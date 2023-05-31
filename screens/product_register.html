@@ -37,14 +37,79 @@
                     <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" required
                         data-nombre />
                     <label class="input-label" for="nombre">Nombre</label>
-                    <span class="input-menssage-error">Este campo es requerido</span>
                 </div>
                 <div class="input-container">
-                    <input name="email" id="email" class="input" type="text" placeholder="email" required data-email />
-                    <label class="input-label" for="email">Email</label>
-                    <span class="input-menssage-error">Este campo es requerido</span>
+                    <input name="codigo" id="codigo" class="input" type="number" placeholder="Código" required
+                        data-codigo />
+                    <label class="input-label" for="codigo">Código</label>
                 </div>
-                <button type="submit" class="button">Registrar</button>
+                <fieldset class="radio-container">
+                    <legend>Categoría</legend>
+                    <ul class="radio-list">
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-carne" value="Carnes" checked>
+                            <label for="radio-carne">Carnes</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-bebida" value="Bebidas">
+                            <label for="radio-bebida">Bebidas</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-lacteos" value="Lácteos">
+                            <label for="radio-lacteos">Lácteos</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-aceites" value="Aceites">
+                            <label for="radio-aceites">Aceites</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-granos" value="Cereales">
+                            <label for="radio-granos">Cereales</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-agua" value="Agua">
+                            <label for="radio-agua">Agua</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-frutas" value="Frutas y Verduras">
+                            <label for="radio-frutas">Frutas y Verduras</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-pescado" value="Peces y Mariscos">
+                            <label for="radio-pescado">Peces y Mariscos</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-legumbres" value="Legumbres">
+                            <label for="radio-legumbres">Legumbres</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="radio-container">
+                    <legend>Proveedor</legend>
+                    <ul class="radio-list">
+                        <li class="radio">
+                            <input type="radio" name="proveedor" id="radio-carulla" value="Carulla" checked>
+                            <label for="radio-carulla">Carulla</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="proveedor" id="radio-camaronera" value="Camaronera SAS">
+                            <label for="radio-camaronera">Camaronera SAS</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="proveedor" id="radio-semarditos" value="Semarditos LTDA">
+                            <label for="radio-semarditos">SemarditosLTDA</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="input-container">
+                    <input name="precio" id="precio" class="input" type="number" placeholder="Precio" required
+                        data-precio />
+                    <label class="input-label" for="precio">Precio</label>
+                </div>
+                <div class="form-done">
+                    <button type="submit" class="button register">Registrar</button>
+                    <button type="button" class="button cancel">Cancelar</button>
+                </div>
             </form>
         </section>
     </main>
