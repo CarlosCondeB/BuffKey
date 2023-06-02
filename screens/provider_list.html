@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../assets/css/components/seeker.css">
     <link rel="stylesheet" href="../assets/css/components/card.css">
     <link rel="stylesheet" href="../assets/css/components/options.css">
-    <link rel="stylesheet" href="../assets/css/product_list.css">
+    <link rel="stylesheet" href="../assets/css/provider_list.css">
 </head>
 
 <body>
@@ -31,33 +31,32 @@
         </nav>
     </header>
 
-    <main class="product-container container">
+    <main class="provider-container container">
         <div class="seeker-container">
             <input type="text" name="seeker" class="seeker" placeholder="Buscar...">
-            <a href="product_register.html" class="button-add">
+            <a href="#" class="button-add">
                 <p class="plus">✚</p>
-                <p>Registrar Producto</p>
+                <p>Registrar Proveedor</p>
             </a>
         </div>
-        <ul class="product-list">
+        <ul class="provider-list">
             <li class="card">
                 <div>
-                    <h2 class="product-name">🍇Pechuga de pollo</h2>
-                    <p class="product-tag">Categoría 1</p>
+                    <h2 class="provider-name">Llanos 21</h2>
+                    <p class="provider-nit">NIT: 1234567890</p>
                 </div>
-                <div class="product-value">
-                    <p class="amount">35</p>
-                    <p>Kg</p>
+                <div class="provider-contact">
+                    <p>Tel: 1234567890</p>
+                    <p>e-mail: llanos21@c3b.com</p>
                 </div>
                 <ul class="opt">
-                    <li class="opt__btn restar">−</li>
                     <li class="opt__btn editar"><a href="#">✎</a></li>
                     <li class="opt__btn eliminar">🗑</li>
                 </ul>
             </li>
         </ul>
     </main>
-    <script type="module" src="../controllers/product.controller.js">
+    <script type="module" src="../controllers/provider.controller.js">
     </script>
 </body>
 

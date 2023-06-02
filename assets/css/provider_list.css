@@ -1,11 +1,11 @@
-.product-container {
+.provider-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-.product-list {
+.provider-list {
     width: 100%;
     font-weight: 600;
     color: black;
@@ -21,18 +21,15 @@
     transition: 0.5s;
 }
 
-.product-tag {
+.provider-nit {
     margin-left: 0.3rem;
     font-size: 0.85rem;
 }
 
-.product-value {
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-.amount {
-    font-size: 2rem;
+.provider-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .filtro {

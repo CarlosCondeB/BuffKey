@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    height: 98vh;
+}
+
+.card {
+    margin: auto;
+    width: 25%;
+    background-color: #fff;
+    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+}
+
+.login-form > * {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+}
+
+#login {
+    width: 60%;
+    color: var(--primary-color);
+    border: none;
+}
+
+#login:hover {
+    background-color: var(--contrast-dark-color);
+    cursor: pointer;
+}
+
+.callus {
+    margin-bottom: 1rem;
+}
+
+.callus a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}

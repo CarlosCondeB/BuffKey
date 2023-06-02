@@ -6,30 +6,22 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <title>BuffKey</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/base/base.css">
-    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
 </head>
 
-<body>
-    <header class="header container">
-        <a href="index.html"><img src="../assets/img/logo.png" alt="Logotipo BuffKey" class="header__logo" /></a>
-        <nav>
-            <ul class="header__list-nav">
-                <li class="header__link"><a href="product_list.html">Productos</a></li>
-                <li class="header__link"><a href="#">Pedidos</a></li>
-                <li class="header__link"><a href="#">Proveedores</a></li>
-                <li class="header__link"><a href="#">Reporte</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-    <script src="renderer.js"></script> -->
+<body class="flex">
+    <div class="card">
+        <h1>Login</h1>
+        <form class="login-form">
+            <input type="text" id="username" name="username" placeholder="Usuario" required="">
+            <input type="password" id="password" name="password" placeholder="Contraseña" required="">
+            <input type="submit" id="login" value="Iniciar Sesion">
+        </form>
+        <div class="callus">
+            <p>Not a member? <a href="#">Call Us</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
