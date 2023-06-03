@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuffKey</title>
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/card.css">
+    <link rel="stylesheet" href="../assets/css/components/input.css">
+    <link rel="stylesheet" href="../assets/css/product_register.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a href="main.html"><img src="../assets/img/logo.png" alt="Logotipo BuffKey" class="header__logo" /></a>
+        <nav>
+            <ul class="header__list-nav">
+                <li class="header__link"><a href="product_list.html">Productos</a></li>
+                <li class="header__link"><a href="#">Pedidos</a></li>
+                <li class="header__link"><a href="provider_list.html">Proveedores</a></li>
+                <li class="header__link"><a href="#">Reporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h1 class="card__title">Editar Proveedor</h1>
+            <form class="flex flex--column" data-form>
+                <div class="input-container">
+                    <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" required
+                        data-nombre />
+                    <label class="input-label" for="nombre">Nombre</label>
+                </div>
+                <div class="input-container">
+                    <input name="nit" id="nit" class="input" type="number" placeholder="NIT" required data-nit />
+                    <label class="input-label" for="nit">NIT</label>
+                </div>
+                <div class="input-container">
+                    <input name="direction" id="direction" class="input" type="text" placeholder="Dirección" required
+                        data-direction />
+                    <label class="input-label" for="direction">Dirección</label>
+                </div>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="email" placeholder="Correo electronico" required
+                        data-email />
+                    <label class="input-label" for="email">Email</label>
+                </div>
+                <div class="input-container">
+                    <input name="tel" id="tel" class="input" type="number" placeholder="Teléfono" required data-tel />
+                    <label class="input-label" for="tel">Teléfono</label>
+                </div>
+                <div class="form-done">
+                    <button type="submit" class="button register">Aceptar</button>
+                    <button type="button" class="button cancel">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

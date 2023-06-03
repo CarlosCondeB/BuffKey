@@ -9,6 +9,11 @@
     margin-bottom: 1rem;
 }
 
+.medidas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .form-done {
     padding: 0 10% 0;
     display: flex;
@@ -31,21 +36,4 @@
 
 .cancel {
     background-color: var(--info-color);
-}
-
-.simple-button {
-    border: none;
-    background-color: unset;
-}
-
-.simple-button--add {
-    color: var(--primary-color);
-}
-
-.simple-button--delete {
-    color: var(--info-color);
-}
-
-.simple-button--edit {
-    color: var(--sucess-color);
 }

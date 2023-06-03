@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuffKey</title>
     <link rel="stylesheet" href="../assets/css/base/base.css">
     <link rel="stylesheet" href="../assets/css/index.css">
@@ -16,12 +16,13 @@
         <form class="login-form">
             <input type="text" id="username" name="username" placeholder="Usuario" required="">
             <input type="password" id="password" name="password" placeholder="Contraseña" required="">
-            <input type="submit" id="login" value="Iniciar Sesion">
+            <button type="submit" id="login">Iniciar Sesion</button>
         </form>
         <div class="callus">
             <p>Not a member? <a href="#">Call Us</a></p>
         </div>
     </div>
+    <script src="../utils/login.js"></script>
 </body>
 
 </html>
