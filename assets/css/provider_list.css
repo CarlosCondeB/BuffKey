@@ -21,15 +21,29 @@
     transition: 0.5s;
 }
 
-.provider-nit {
-    margin-left: 0.3rem;
-    font-size: 0.85rem;
+.provider-description {
+    width: 80%;
+}
+
+.card-name {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .provider-contact {
+    height: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-weight: normal;
+}
+
+.provider-contact b {
+    font-weight: 600;
+}
+
+.provider-contact p {
+    padding-top: 0.5rem;
 }
 
 .filtro {

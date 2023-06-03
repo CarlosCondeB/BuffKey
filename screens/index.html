@@ -1,14 +1,27 @@
+<<<<<<< HEAD
+=======
+</html>
+
+>>>>>>> 4aa8da0334ed8c12c2a506693c344a5493542094
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuffKey</title>
     <link rel="stylesheet" href="../assets/css/base/base.css">
+=======
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffkey</title>
+>>>>>>> 4aa8da0334ed8c12c2a506693c344a5493542094
     <link rel="stylesheet" href="../assets/css/index.css">
+
 </head>
+<<<<<<< HEAD
 <body class="flex">
     <div class="card">
         <h1>Login</h1>
@@ -23,3 +36,37 @@
     </div>
 </body>
 </html>
+=======
+
+<body>
+    <form id="login">
+        <input type="text" placeholder="Nombre de usuario" id="username" required>
+        <input type="password" placeholder="Contraseña" id="password" required>
+        <button type="submit">Iniciar sesion</button>        
+    </form>
+    
+    <script>
+        const loginForm =document.getElementById("login");
+
+        loginForm.addEventListener("submit", (e) =>{
+            e.preventDefault();
+
+            const usernameInput =document.getElementById("username");
+            const passwordInput =document.getElementById("password");
+
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+
+            if(checkLogin(username, password)){
+                
+                window.location.href = "main.html";
+            }else{
+                alert("Nombre de usuario o contraseña incorrecta");
+            }
+        })
+    </script>
+
+    <script src="..//main.js"></script>
+</body>
+</html>
+>>>>>>> 4aa8da0334ed8c12c2a506693c344a5493542094

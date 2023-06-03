@@ -8,10 +8,8 @@
     <title>BuffKey</title>
     <link rel="stylesheet" href="../assets/css/base/base.css">
     <link rel="stylesheet" href="../assets/css/components/header.css">
-    <link rel="stylesheet" href="../assets/css/components/seeker.css">
     <link rel="stylesheet" href="../assets/css/components/card.css">
-    <link rel="stylesheet" href="../assets/css/components/options.css">
-    <link rel="stylesheet" href="../assets/css/product_list.css">
+    <link rel="stylesheet" href="../assets/css/movement_history.css">
 </head>
 
 <body>
@@ -28,36 +26,23 @@
     </header>
 
     <main class="product-container container">
-        <div class="seeker-container">
-            <input type="text" name="seeker" class="seeker" placeholder="Buscar...">
-            <a href="product_register.html" class="button-add">
-                <p class="plus">✚</p>
-                <p>Registrar Producto</p>
-            </a>
-            <a href="movement_history.html" class="button-add product-history">
-                <p class="plus">🕮</p>
-                <p class="history">Historial</p>
-            </a>
-        </div>
+        <h1 class="title">HISTORIAL DE MOVIMIENTOS</h1>
         <ul class="product-list">
             <li class="card">
                 <div>
                     <h2 class="card-name">Pechuga de pollo</h2>
-                    <p class="product-tag">Categoría 1</p>
+                    <p class="user"><b>Usuario:</b>TimeRunner</p>
                 </div>
+                <div class="mov">⯭ ⯯ Salida</div>
                 <div class="product-value">
                     <p class="amount">35</p>
                     <p>Kg</p>
                 </div>
-                <ul class="opt">
-                    <li class="opt__btn restar">−</li>
-                    <li class="opt__btn editar"><a href="product_update.html">✎</a></li>
-                    <li class="opt__btn eliminar">🗑</li>
-                </ul>
+                <div class="date">05/06/2023</div>
             </li>
         </ul>
     </main>
-    <script type="module" src="../controllers/product.controller.js">
+    <script type="module" src=".">
     </script>
 </body>
 

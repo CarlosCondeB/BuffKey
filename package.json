@@ -20,6 +20,7 @@
     "electron": "^24.4.1"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.4.0",
     "electron-squirrel-startup": "^1.0.0"
   },
@@ -32,4 +33,8 @@
     "url": "https://github.com/CarlosCondeB/BuffKey/issues"
   },
   "homepage": "https://github.com/CarlosCondeB/BuffKey#readme"
+=======
+    "electron-squirrel-startup": "^1.0.0"
+  }
+>>>>>>> 4aa8da0334ed8c12c2a506693c344a5493542094
 }

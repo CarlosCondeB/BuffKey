@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-
-=======
->>>>>>> 4aa8da0334ed8c12c2a506693c344a5493542094
     <title>BuffKey</title>
     <link rel="stylesheet" href="../assets/css/base/base.css">
     <link rel="stylesheet" href="../assets/css/components/header.css">
@@ -31,7 +27,7 @@
     </header>
     <main class="container">
         <section class="card">
-            <h1 class="card__title">Nuevo Producto</h1>
+            <h1 class="card__title">Editar Producto</h1>
             <form class="flex flex--column" data-form>
                 <div class="input-container">
                     <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" required
@@ -45,8 +41,43 @@
                 </div>
                 <fieldset class="radio-container">
                     <legend>Categoría</legend>
-                    
-                    <ul class="radio-list" id="listaCategoria">
+                    <ul class="radio-list">
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-carne" value="Carnes" checked>
+                            <label for="radio-carne">Carnes</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-bebida" value="Bebidas">
+                            <label for="radio-bebida">Bebidas</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-lacteos" value="Lácteos">
+                            <label for="radio-lacteos">Lácteos</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-aceites" value="Aceites">
+                            <label for="radio-aceites">Aceites</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-granos" value="Cereales">
+                            <label for="radio-granos">Cereales</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-agua" value="Agua">
+                            <label for="radio-agua">Agua</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-frutas" value="Frutas y Verduras">
+                            <label for="radio-frutas">Frutas y Verduras</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-pescado" value="Peces y Mariscos">
+                            <label for="radio-pescado">Peces y Mariscos</label>
+                        </li>
+                        <li class="radio">
+                            <input type="radio" name="Categoria" id="radio-legumbres" value="Legumbres">
+                            <label for="radio-legumbres">Legumbres</label>
+                        </li>
                     </ul>
                 </fieldset>
                 <fieldset class="radio-container">
@@ -71,7 +102,7 @@
                     <ul class="medidas">
                         <li class="radio">
                             <input type="radio" name="medida" id="radio-unidad" value="Unidades" checked>
-                            <label for="radio-unidad">Unidad</label>
+                            <label for="radio-unidad">Unidades</label>
                         </li>
                         <li class="radio">
                             <input type="radio" name="medida" id="radio-kilogramo" value="Kg">
@@ -79,11 +110,11 @@
                         </li>
                         <li class="radio">
                             <input type="radio" name="medida" id="radio-litros" value="Litros">
-                            <label for="radio-litros">Litro</label>
+                            <label for="radio-litros">Litros</label>
                         </li>
                         <li class="radio">
                             <input type="radio" name="medida" id="radio-libras" value="Libras">
-                            <label for="radio-libras">Libra</label>
+                            <label for="radio-libras">Libras</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -93,14 +124,12 @@
                     <label class="input-label" for="precio">Precio</label>
                 </div>
                 <div class="form-done">
-                    <button type="submit" class="button register">Registrar</button>
+                    <button type="submit" class="button register">Aceptar</button>
                     <button type="button" class="button cancel">Cancelar</button>
                 </div>
             </form>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="../utils/axios.js"></script>
 </body>
 
 </html>

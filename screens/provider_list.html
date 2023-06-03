@@ -3,13 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuffKey</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/base/base.css">
     <link rel="stylesheet" href="../assets/css/components/header.css">
     <link rel="stylesheet" href="../assets/css/components/seeker.css">
@@ -34,23 +30,24 @@
     <main class="provider-container container">
         <div class="seeker-container">
             <input type="text" name="seeker" class="seeker" placeholder="Buscar...">
-            <a href="#" class="button-add">
+            <a href="provider_register.html" class="button-add">
                 <p class="plus">✚</p>
                 <p>Registrar Proveedor</p>
             </a>
         </div>
         <ul class="provider-list">
             <li class="card">
-                <div>
-                    <h2 class="provider-name">Llanos 21</h2>
-                    <p class="provider-nit">NIT: 1234567890</p>
-                </div>
-                <div class="provider-contact">
-                    <p>Tel: 1234567890</p>
-                    <p>e-mail: llanos21@c3b.com</p>
+                <div class="provider-description">
+                    <h2 class="card-name">Llanos 21</h2>
+                    <div class="provider-contact">
+                        <p><b>NIT: </b>1234567890</p>
+                        <p><b>Dirección: </b>Cra 15 # 17-05 Los Ejecutivos</p>
+                        <p><b>E-mail: </b>llanos21@c3b.com</p>
+                        <p><b>Teléfono: </b>1234567890</p>
+                    </div>
                 </div>
                 <ul class="opt">
-                    <li class="opt__btn editar"><a href="#">✎</a></li>
+                    <li class="opt__btn editar"><a href="provider_update.html">✎</a></li>
                     <li class="opt__btn eliminar">🗑</li>
                 </ul>
             </li>
