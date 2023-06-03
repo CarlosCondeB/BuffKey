@@ -1,28 +1,44 @@
-<!DOCTYPE html>
-<html lang="es">
+</html>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuffKey</title>
-    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <title>Buffkey</title>
     <link rel="stylesheet" href="../assets/css/index.css">
+
 </head>
 
-<body class="flex">
-    <div class="card">
-        <h1>Login</h1>
-        <form class="login-form">
-            <input type="text" id="username" name="username" placeholder="Usuario" required="">
-            <input type="password" id="password" name="password" placeholder="Contraseña" required="">
-            <button type="submit" id="login">Iniciar Sesion</button>
-        </form>
-        <div class="callus">
-            <p>Not a member? <a href="#">Call Us</a></p>
-        </div>
-    </div>
-    <script src="../utils/login.js"></script>
-</body>
+<body>
+    <form id="login">
+        <input type="text" placeholder="Nombre de usuario" id="username" required>
+        <input type="password" placeholder="Contraseña" id="password" required>
+        <button type="submit">Iniciar sesion</button>        
+    </form>
+    
+    <script>
+        const loginForm =document.getElementById("login");
 
+        loginForm.addEventListener("submit", (e) =>{
+            e.preventDefault();
+
+            const usernameInput =document.getElementById("username");
+            const passwordInput =document.getElementById("password");
+
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+
+            if(checkLogin(username, password)){
+                
+                window.location.href = "main.html";
+            }else{
+                alert("Nombre de usuario o contraseña incorrecta");
+            }
+        })
+    </script>
+
+    <script src="..//main.js"></script>
+</body>
 </html>

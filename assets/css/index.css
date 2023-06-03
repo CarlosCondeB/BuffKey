@@ -1,59 +1,38 @@
 body {
-    display: flex;
-    height: 98vh;
-}
-
-.card {
-    margin: auto;
-    width: 25%;
-    background-color: #fff;
-    box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
-    border-radius: 10px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2rem;
-    padding: 1rem;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 10px 10px 0 0;
-}
-
-.login-form {
+    background-color: #ffffff;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    height: 25vh;
-}
-
-.login-form > * {
-    width: 80%;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    box-sizing: border-box;
-    border: 1px solid var(--primary-color);
-}
-
-#login {
-    width: 60%;
-    color: var(--primary-color);
+    margin-top: 100px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
     border: none;
-    background-color: lightgray;
-}
-
-#login:hover {
-    background-color: darkgrey;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 150px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.callus {
-    margin-bottom: 1rem;
-}
-
-.callus a {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .alert {
+    color: red;
+    margin-top: 10px;
+  }
